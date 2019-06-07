@@ -479,7 +479,7 @@ var zoomPlugin = {
 				}
 			}
 		};
-		node.addEventListener('wheel', chartInstance.$zoom._wheelHandler);
+		//node.addEventListener('wheel', chartInstance.$zoom._wheelHandler);
 		
 		chartInstance.ZoomIn = function () {
 			var rect = chartInstance.canvas.getBoundingClientRect();
