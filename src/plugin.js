@@ -482,25 +482,25 @@ var zoomPlugin = {
 		node.addEventListener('wheel', chartInstance.$zoom._wheelHandler);
 		
 		chartInstance.ZoomIn = function () {
-			var rect = document.getElementById(chartInstance.canvas.id).getBoundingClientRect();
+			var rect = chartInstance.canvas.getBoundingClientRect();
 
             var center = {
             	x: rect.width / 2,
                 y: rect.height / 2
             };
 
-            doZoom(chartInstance,1.1,center);
+            doZoom(chartInstance, 1.1, center);
          };
 
          chartInstance.ZoomOut = function () {
-         	var rect = document.getElementById(chartInstance.canvas.id).getBoundingClientRect();
+         	var rect = chartInstance.canvas.getBoundingClientRect();
 
             var center = {
             	x: rect.width / 2,
                 y: rect.height / 2
             };
 
-            doZoom(chartInstance,0.909,center);
+            doZoom(chartInstance, 0.909, center);
          };
 
 		if (Hammer) {
