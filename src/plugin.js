@@ -489,7 +489,7 @@ var zoomPlugin = {
                 y: rect.height / 2
             };
 
-            doZoom(chartInstance, 1.1, center);
+            doZoom(chartInstance, 1.1, 1.1, center);
          };
 
          chartInstance.ZoomOut = function () {
@@ -500,7 +500,7 @@ var zoomPlugin = {
                 y: rect.height / 2
             };
 
-            doZoom(chartInstance, 0.909, center);
+            doZoom(chartInstance, 0.9, 0.9, center);
          };
 
 		if (Hammer) {
